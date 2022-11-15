@@ -19,5 +19,5 @@ deploy:
   bucket_path: "EBApptest"
   on: 
     branch: main
-  access_key_id: "AKIAT3FKXF5YANOWOT7M"
-  secret_access_key: "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"
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
