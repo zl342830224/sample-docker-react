@@ -8,7 +8,7 @@ services:
 before_install:
     - docker build -t norbon/sample-app -f Dockerfile.dev .
 script:
-    - docker run -e CI=true norbon/sample-app
+    - docker run -e CI=true norbon/sample-app npm run test -- --coverage --watchAll=false
 
 deploy:
   provider: elasticbeanstalk
