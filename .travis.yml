@@ -1,7 +1,7 @@
 sudo: required
 language: node_js
 node_js:
-    - "stable"
+    - 14.15.0
 
 services:
     - docker
@@ -21,4 +21,3 @@ deploy:
     branch: main
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
-  
